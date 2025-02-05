@@ -23,6 +23,25 @@ namespace projeto_dbm.Controllers
             _contexto = contexto;
         }
 
+        // GET: api/Pessoas/{id}
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetPessoaPorId(int id)
+        {
+            Console.WriteLine($"Buscando pessoa com ID: {id}"); // Log de depuração
+        
+            var pessoa = await _contexto.Pessoas.FindAsync(id);
+        
+            if (pessoa == null)
+            {
+                Console.WriteLine("Pessoa não encontrada."); // Log de depuração
+                return NotFound(new { mensagem = "Pessoa não encontrada" });
+            }
+        
+            Console.WriteLine($"Pessoa encontrada: {pessoa.Nome}, {pessoa.Idade}, {pessoa.Cidade}, {pessoa.Profissao}"); // Log de depuração
+        
+            return Ok(pessoa);
+        }
+
         // POST: api/Pessoas/importar-csv
         [HttpPost("importar-csv")]
         public async Task<IActionResult> ImportarCsv(IFormFile arquivoCsv)
