@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\pedro\\Desktop\\dbm_C#\\projeto_dbm\\api-csharp\\projeto_dbm.csproj": {}
+    "C:\\Users\\pedro\\Desktop\\DBM_C#\\projeto_dbm\\api-csharp\\projeto_dbm.csproj": {}
   },
   "projects": {
-    "C:\\Users\\pedro\\Desktop\\dbm_C#\\projeto_dbm\\api-csharp\\projeto_dbm.csproj": {
+    "C:\\Users\\pedro\\Desktop\\DBM_C#\\projeto_dbm\\api-csharp\\projeto_dbm.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pedro\\Desktop\\dbm_C#\\projeto_dbm\\api-csharp\\projeto_dbm.csproj",
+        "projectUniqueName": "C:\\Users\\pedro\\Desktop\\DBM_C#\\projeto_dbm\\api-csharp\\projeto_dbm.csproj",
         "projectName": "projeto_dbm",
-        "projectPath": "C:\\Users\\pedro\\Desktop\\dbm_C#\\projeto_dbm\\api-csharp\\projeto_dbm.csproj",
+        "projectPath": "C:\\Users\\pedro\\Desktop\\DBM_C#\\projeto_dbm\\api-csharp\\projeto_dbm.csproj",
         "packagesPath": "C:\\Users\\pedro\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pedro\\Desktop\\dbm_C#\\projeto_dbm\\api-csharp\\obj\\",
+        "outputPath": "C:\\Users\\pedro\\Desktop\\DBM_C#\\projeto_dbm\\api-csharp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\pedro\\AppData\\Roaming\\NuGet\\NuGet.Config"
