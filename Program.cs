@@ -1,41 +1,28 @@
+using projeto_dbm.Models;
+using projeto_dbm.Data;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-// Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
-builder.Services.AddOpenApi();
+// Configuração do DbContext para usar o SQL Server
+builder.Services.AddDbContext<ContextoBD>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("ConexaoPadrao")));
+
+// Adicionando os serviços de controller
+builder.Services.AddControllers();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
+// Configuração para usar o roteamento e mapear os controllers
+app.MapControllers();
+
+// Migrando o banco de dados (garante que as migrações sejam aplicadas automaticamente)
+using (var escopo = app.Services.CreateScope())
 {
-    app.MapOpenApi();
+    var contexto = escopo.ServiceProvider.GetRequiredService<ContextoBD>();
+    contexto.Database.Migrate();
 }
 
-app.UseHttpsRedirection();
-
-var summaries = new[]
-{
-    "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-};
-
-app.MapGet("/weatherforecast", () =>
-{
-    var forecast =  Enumerable.Range(1, 5).Select(index =>
-        new WeatherForecast
-        (
-            DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
-            Random.Shared.Next(-20, 55),
-            summaries[Random.Shared.Next(summaries.Length)]
-        ))
-        .ToArray();
-    return forecast;
-})
-.WithName("GetWeatherForecast");
-
+// Iniciando a aplicação
 app.Run();
-
-record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
-{
-    public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
-}
+builder.Logging.AddConsole();
