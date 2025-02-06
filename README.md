@@ -49,7 +49,7 @@ O projeto tem como objetivo principal desenvolver uma API utilizando C# para lei
 
 - **Inicializar A API**  
   Agora temos que rodar o comando  `.\run.bat` no terminal
-  
+
 - **UTILIZAR POSTMAN PARA SUBIR CSV**  
   Usando o PostMan usamos a API com caminho *http://localhost:5268/api/pessoas/importar-csv* para subir o arquivo  
   Lembrando que no PostMan temos que configurar a chamada na Aba Body colocarmos "form-data", no campo Key "arquivoCsv",  
@@ -66,3 +66,17 @@ O projeto tem como objetivo principal desenvolver uma API utilizando C# para lei
 
 - **Inicializar o programa**  
     Agora já no diretório correto devemos colocar o comando `py main.py` no console para iniciar o programa.
+
+## Exemplos de chamadas das APIS:
+
+- **API POST C#**  ![Imagem1](https://github.com/user-attachments/assets/a5628958-6173-4b06-96fb-001004590afe)
+
+- **RESULTADO**  ![Imagem2](https://github.com/user-attachments/assets/9e413b8f-7f11-40fb-bd71-aa0520c20d4f)
+
+- **API GET C#**  ![Imagem3](https://github.com/user-attachments/assets/20f9a58a-dd98-4578-90da-e272a58b6678)
+
+- **RESULTADO**  ![Imagem4](https://github.com/user-attachments/assets/c001c6b6-ab95-46be-9dfa-2e5a55d398df)
+
+
+  
+
