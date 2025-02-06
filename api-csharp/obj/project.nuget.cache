@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GXzE4Hpx0aw=",
+  "dgSpecHash": "uSbjrcM0mXo=",
   "success": true,
-  "projectFilePath": "C:\\Users\\pedro\\Desktop\\DBM_C#\\projeto_dbm\\api-csharp\\projeto_dbm.csproj",
+  "projectFilePath": "C:\\Users\\pedro\\Desktop\\dbm_C#\\projeto_dbm\\api-csharp\\projeto_dbm.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\pedro\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\pedro\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

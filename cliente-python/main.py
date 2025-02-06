@@ -12,7 +12,6 @@ def limpar_campos():
     label_categoria_idade.config(text="Categoria de Idade: ")
     label_cidade.config(text="Cidade: ")
     label_profissao.config(text="Profissão: ")
-    label_msg.config(text="", fg="red")
 
 
 def exibir_dados_pessoa(pessoa):
