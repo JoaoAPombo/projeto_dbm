@@ -1,0 +1,60 @@
+## Windows ##
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+## ASP.NET ##
+# User-specific files
+.idea/
+.vs/
+.vscode/
+
+# ASP.NET temporary files
+bin/
+obj/
+
+# ASP.NET Core
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# VS for Mac
+.vscode/
+
+## .NET Core ##
+# .NET Core build output
+bin/
+obj/
+
+# .NET Core SDK tool folder
+.nuget/
+
+# User-specific files
+.vs/
+.vscode/
+
+# User-specific files from Rider
+.idea/
+
+## macOS ##
+# macOS Finder
+.DS_Store
+
+## Windows ##
+# Windows Installer files
+Thumbs.db
+
+## NPM ##
+node_modules/
+npm-debug.log
+yarn-error.log
+
+## JetBrains Rider ##
+.idea/
+
+# User-specific files
+.vs2019/
+.vs2017/
+.vs2015/
