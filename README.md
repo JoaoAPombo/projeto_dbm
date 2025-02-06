@@ -59,7 +59,9 @@ O projeto tem como objetivo principal desenvolver uma API utilizando C# para lei
 ## Passos para execução do projeto Python
 
 - **Entrar no diretório**
+- 
     Primeiro deve se entrar no diretorio ".\projeto_dbm\cliente-python"
 
 - **Inicializar o programa**
+- 
     Agora já no diretorio correto devemos colocar o comando "py main.py" no console para iniciar o programa.
