@@ -37,10 +37,15 @@ O projeto tem como objetivo principal desenvolver uma API utilizando C# para lei
 - **POSTMAN**  
   Para testes e envios de dados.
 
+
 ## Passos para execução do projeto C#
 
 - **Entrar no diretório**  
     Primeiro deve-se entrar no diretório `.\projeto_dbm\api-csharp`
+
+- **Verificar e atualizar a connection string**  
+    Na pasta `.\appsettings.json` devemos ter certeza que a connection string está com o nome do servidor local, caso não esteja,
+    devemos atualizar ela para conter o nome do servidor, "ConexaoPadrao": "Server={NomeDoServidor}\\..."
 
 - **Inicializar A API**  
   Agora temos que rodar o comando  `.\run.bat` no terminal
