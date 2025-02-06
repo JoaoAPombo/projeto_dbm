@@ -37,31 +37,27 @@ O projeto tem como objetivo principal desenvolver uma API utilizando C# para lei
 - **POSTMAN**  
   Para testes e envios de dados.
 
-
 ## Passos para execução do projeto C#
 
-- **Entrar no diretório**
-    Primeiro deve se entrar no diretorio ".\projeto_dbm\api-csharp"
+- **Entrar no diretório**  
+    Primeiro deve-se entrar no diretório `.\projeto_dbm\api-csharp`
 
-- **Inicializar A API**
-  Agora temos que rodar o comando  .\run.bat no terminal
+- **Inicializar A API**  
+  Agora temos que rodar o comando  `.\run.bat` no terminal
   
-- **UTILIZAR POSTMAN PARA SUBIR CSV**
-  Usando o PostMan usamos a API com caminho *http://localhost:5268/api/pessoas/importar-csv* para subir o arquivo
-  Lembrando que no PostMan temos que configurar a chamada na Aba Body colocarmos "form-data", no campo Key "arquivoCsv",
+- **UTILIZAR POSTMAN PARA SUBIR CSV**  
+  Usando o PostMan usamos a API com caminho *http://localhost:5268/api/pessoas/importar-csv* para subir o arquivo  
+  Lembrando que no PostMan temos que configurar a chamada na Aba Body colocarmos "form-data", no campo Key "arquivoCsv",  
   e em value o arquivo que iremos subir.
 
-- **UTILIZAR POSTMAN PARA TESTAR CHAMADA**
-  Usando o PostMan usamos a API com caminho *http://localhost:5268/api/pessoas/{Id}*, podemos colocar qualquer id presente no banco,
+- **UTILIZAR POSTMAN PARA TESTAR CHAMADA**  
+  Usando o PostMan usamos a API com caminho *http://localhost:5268/api/pessoas/{Id}*, podemos colocar qualquer id presente no banco,  
   para receber dados do usuário em formato JSON.
-
 
 ## Passos para execução do projeto Python
 
-- **Entrar no diretório**
-- 
-    Primeiro deve se entrar no diretorio ".\projeto_dbm\cliente-python"
+- **Entrar no diretório**  
+    Primeiro deve-se entrar no diretório `.\projeto_dbm\cliente-python`
 
-- **Inicializar o programa**
-- 
-    Agora já no diretorio correto devemos colocar o comando "py main.py" no console para iniciar o programa.
+- **Inicializar o programa**  
+    Agora já no diretório correto devemos colocar o comando `py main.py` no console para iniciar o programa.
